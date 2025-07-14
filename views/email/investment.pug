@@ -1,0 +1,19 @@
+extends baseEmail
+
+block content
+    strong Hi #{firstName},
+    p You have successfully invested 
+        b $#{amount} 
+        span  on our #{plan.name} investment module.
+        p Kindly wait for the stipulated time of #{plan.planDuration} #{plan.timingParameter} and your profits will automatically be credited to your account.  
+    p
+    | Best Regards,
+    br
+    strong The Real World Support Team!
+
+//-     Hi John,
+//- You have successfully invested $1000 in Market Masters copy trade.
+//- Expected return based on trader's performance (current 1M return: 8.5%).
+
+//- Best Regards,
+//- InvestmentCrestCapital Support Team!
