@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "the_real_world",
+    "username": "crlmkvfi_jointherealworld",
+    "password": ",++ZFH%d;z20",
+    "database": "crlmkvfi_realword",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "the_real_world",
+    "username": "crlmkvfi_jointherealworld",
+    "password": ",++ZFH%d;z20",
+    "database": "crlmkvfi_realword",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "the_real_world",
+    "username": "crlmkvfi_jointherealworld",
+    "password": ",++ZFH%d;z20",
+    "database": "crlmkvfi_realword",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

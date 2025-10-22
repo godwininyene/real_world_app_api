@@ -11,7 +11,7 @@ module.exports = class Email {
         this.amount = amount;
         this.plan = plan;
         this.emailVerificationCode = emailVerificationCode;
-        this.from = `TheRealWorldApp <${process.env.EMAIL_USER}>`;
+        this.from = `Join the real world <${process.env.EMAIL_USER}>`;
     }
 
     newTransport(){

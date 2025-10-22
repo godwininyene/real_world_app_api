@@ -109,8 +109,7 @@ exports.createTransaction = catchAsync(async(req, res, next)=>{
             },
         });
     } catch (error) {
-       
-        return next(new AppError("There was a problem sending the email.. Please try again later!", '', 500))
+        return next(new AppError("Transaction created successfully but there was a problem sending email.", '', 500))
     }
 });
 
@@ -248,8 +247,8 @@ exports.handleTransaction = catchAsync(async (req, res, next) => {
     // Email preparation
     const referer = req.get('referer') || '';
     const urls = {
-        deposit: `${referer}manage/investor/dashboard`,
-        withdrawal: `${referer}manage/investor/transactions`
+        deposit: `${referer}investor/dashboard`,
+        withdrawal: `${referer}investor/transactions`
     };
 
     const types = {
@@ -279,6 +278,7 @@ exports.handleTransaction = catchAsync(async (req, res, next) => {
             }
         });
     } catch (error) {
-        return next(new AppError("There was a problem sending the email. Please try again later!", '', 500));
+
+        return next(new AppError("Transaction status updated successfully but there was a problem sending email.", '', 500));
     }
 });

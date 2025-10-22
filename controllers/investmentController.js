@@ -79,8 +79,7 @@ exports.makeInvestment = catchAsync(async (req, res, next) => {
             }
         });
     } catch (error) {
-        console.log(error);
-        return next(new AppError("There was a problem sending the email. Please try again later!", '', 500));
+        return next(new AppError("Investment created successfully but there was a problem sending email.", '', 500));
     }
 });
 
